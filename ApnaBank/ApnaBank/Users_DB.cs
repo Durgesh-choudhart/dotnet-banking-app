@@ -35,8 +35,9 @@ namespace ApnaBank
                 ud.password = reader[7].ToString();
                 Session.CreateSession(ud);
              return true;
-            }
-            else{
+           }
+            else 
+            {
                 return false;
             }
         }
