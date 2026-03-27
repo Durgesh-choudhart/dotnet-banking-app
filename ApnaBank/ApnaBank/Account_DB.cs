@@ -53,8 +53,7 @@ namespace ApnaBank
             if (reader.Read()){
                 return (reader[0].ToString());
             }
-            else
-            {
+            else {
                 Console.WriteLine("Error");
                 return "0";
             }
