@@ -65,5 +65,11 @@ namespace ApnaBank
             BuisnessLogic bl = new BuisnessLogic();
             bl.NonQuery(query);
         }
+        public void UpdateAccount(Users_DB user)
+        {
+            String query = String.Format("delete from Account where userid={0}", user.id);
+            BuisnessLogic bl = new BuisnessLogic();
+            bl.NonQuery(query);
+        }
     }
 }
